@@ -3,7 +3,7 @@
 
 **Problem:** What is the fractional amount of matter and energy of the universe?
 
-**Solution:** I collected supernova data from an international collaboration survey, built from a scratch a non-naive bayes regression algorithm to fit the luminosity distance curve and used Bayesian inference to find the probabilities of the parameters values, given the data collected. Then, I used the Markov Chain Monte Carlo method to estimate the final values and respective uncertainties.
+**Solution:** I collected supernova data from an international collaboration survey, built from scratch a non-naive bayes regression algorithm to fit the luminosity distance curve and used Bayesian inference to find the probabilities of the parameters values, given the data collected. Then, I used the Markov Chain Monte Carlo method to estimate the final values and respective uncertainties.
 
 **Result:** The fractions of matter and radiation that I estimated are in agreement with the Planck Satellite 2018 release.
 
