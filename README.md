@@ -10,7 +10,7 @@
 
 # Abstract
 
-In this project we will use the Pantheon+SH0ES luminosity distances data of 1701 Supernovae to estimate cosmological parameters. The parameters that we are interested in are the Hubble constant $H_0$, the matter density fraction $\Omega_m$ and the dark energy fraction $\Omega_\Lambda$, which is responsible for the accelerated expansin of the universe. The bayesian statistics will be adopted to calculate the posterior probability distribution of the parameters using the likelihood distribution and the prior probability. The likelihood for a set of cosmological parameters will be computed given the experimental supernovae distances. Also, we will implement the emcee algorithm to generate samples with a Markov Chain Monte Carlo (MCMC) model starting from the parameters values that maximize the likelihood. Finally, the results will be plotted in the space of parameters and the best values estimated avereging over some percentile of the samples.
+In this project we will use the Pantheon+SH0ES luminosity distances data of 1701 Supernovae to estimate cosmological parameters. The parameters that we are interested in are the Hubble constant $H_0$, the matter density fraction $\Omega_m$ and the dark energy fraction $\Omega_\Lambda$, which is responsible for the accelerated expansion of the universe. The bayesian statistics will be adopted to calculate the posterior probability distribution of the parameters using the likelihood distribution and the prior probability. The likelihood for a set of cosmological parameters will be computed given the experimental supernovae distances. Also, we will implement the emcee algorithm to generate samples with a Markov Chain Monte Carlo (MCMC) model starting from the parameters values that maximize the likelihood. Finally, the results will be plotted in the space of parameters and the best values estimated avereging over some percentile of the samples.
 
 # Data Extraction
 
@@ -19,7 +19,7 @@ The data of 1701 supernovae luminosity distances was extracted from the [Phanteo
 # Theorethical Model
 The luminosity distance in a flat expanding Friedmann-Lemaitre-Robertson-Walker university is given by:
 
-$$ d_L = (1+z)d_H \int_{0}^{z}dz^{\prime} \left[ \Omega_r(1+z^{\prime})^4 + \Omega_m(1+z^{\prime})^3+ \Omega_{\Lambda} \right]^{-1/2} \,,$$
+$$ d_L = (1+z)d_H \int_{0}^{z}dz^{\prime} \left[ \Omega_r(1+z^{\prime})^4 + \Omega_m(1+z^{\prime})^3+ \Omega_{\Lambda} \right]^{-1/2} ,$$
 
 where $d_H=c/H_0$ is the Hubble distance.
 
@@ -34,7 +34,7 @@ The covariance matrix will be imported from the [Pantheon+SH0ES Git Hub Data Rel
 
 The likelihood distribution that will be used is
 
-$$ \mathcal{L}(\mu_{\rm{exp}}, C | \theta) = 2N\pi \exp{ \left[ \frac{  -(\mu(\theta) - \mu_{\rm{exp}})^T \, C \, (\mu(\theta) - \mu_{\rm{exp}}) - \sum_{j}c_j  }{2} \right] } \,,$$
+$$ \mathcal{L}(\mu_{\rm{exp}}, C | \theta) = 2N\pi \exp{ \left[ \frac{  -(\mu(\theta) - \mu_{\rm{exp}})^T  C  (\mu(\theta) - \mu_{\rm{exp}}) - \sum_{j}c_j  }{2} \right] } ,$$
 
 where $C$ is the covariance matrix, $c_j$ is its eigenvalues, $\theta = (\Omega_r, \Omega_m, H_0)$ and $N$ is the dimension of the data array.
 
